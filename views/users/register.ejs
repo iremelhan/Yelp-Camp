@@ -1,0 +1,25 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="form-page">
+  <div class="form-tagline text-center">
+    <img src="/assets/yelpcamp-logo.png" alt="" class="img-fluid">
+  </div>
+  <div class="form">
+    <form action="/register" method="POST">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+        required
+      />
+      <input type="email" name="email" id="email" placeholder="example@gmail.com" required />
+      <input type="password" name="password" id="password" placeholder="Password" required />
+      <button type="submit">Create</button>
+      <p class="message">
+        Already registered?
+        <a href="/login">Sign In</a>
+      </p>
+    </form>
+  </div>
+</div>
